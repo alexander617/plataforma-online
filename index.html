@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Plataformas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculamos el archivo CSS -->
+</head>
+<body>
+
+    <!-- Contenedor del formulario de inicio de sesión -->
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+            <!-- Campo para ingresar código de país y número de teléfono -->
+            <div class="telefono-container">
+                <input type="text" id="codigoPais" name="codigoPais" placeholder="Código De País" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="Número de Teléfono" required>
+            </div>
+
+            <select id="plataforma" name="plataforma" required>
+                <option value="">Selecciona una Plataforma</option>
+                <option value="netflix">Netflix</option>
+                <option value="disney">Disney+</option>
+                <option value="hbo">HBO Max</option>
+                <option value="spotify">Spotify</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Contenedor del mensaje de confirmación -->
+    <div class="message-container" id="messageContainer">
+        <h3>Datos ingresados:</h3>
+        <p id="messageContent"></p>
+    </div>
+
+    <script src="script.js"></script> <!-- Vinculamos el archivo JS -->
+</body>
+</html>
+
+
